@@ -1,0 +1,95 @@
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+.body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6a6a6a;
+    font-size: 14px;
+    background-color: #EFF2F1;
+}
+.hero {
+    background-color: #3B5D50;
+    margin: 0px;
+    position: relative;
+    color: #FFFFFF;
+    padding-top: 32px;
+    padding-bottom: 128px;
+    height: 460px;
+}
+.hero .intro {
+    position: relative;
+    margin-top: 20%;
+    max-width: 450;
+}
+.hero h1 {
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.hero p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 100%;
+    font-weight: 300;
+    width: 82%;
+}
+.hero .wrape-img img {
+    position: relative;
+    width: 625px;
+
+}
+.hero .lightdot-img {
+    position: absolute;
+    background-image: url(../images/dots-light.svg);
+    width: 255px;
+    height: 163px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 316px;
+    top: 67px;
+}
+.hero-btn .btn1 {
+    border-radius: 30px;
+    color: #2f2f2f;
+    font-weight: 500;
+    padding: 10px;
+    margin: 20px;
+    ;
+}
+.hero-btn .btn2 {
+    border-radius: 30px;
+    font-weight: 500;
+    padding: 10px;
+    width: 100px;
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.3);
+    margin-left: -12px;
+}
+.product h2 {
+    font-weight: 400;
+    font-size: 2rem;
+    width: 99%;
+
+}
+.product p {
+    font-size: 12px;
+    margin-top: 15px;
+    width: 82%;
+}
+.product button {
+    border-radius: 30px;
+    width: 97px;
+    margin-top: 10px;
+}
+.card {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+    border-style: none;
+}
+.card img {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
