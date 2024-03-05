@@ -1,9 +1,15 @@
 import React from 'react';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Hero.css';
 import img from "../images/couch.png";
 import cardimg1 from "../images/product-1.png";
 import cardimg2 from "../images/product-2.png";
 import cardimg3 from "../images/product-3.png";
+import truck from "../images/truck.svg";
+import bag from "../images/bag.svg";
+import support from "../images/support.svg";
+import retrn from "../images/return.svg";
+import whychooseus from "../images/why-choose-us-img.jpg";
 
 
 function Hero() {
@@ -36,25 +42,25 @@ function Hero() {
 
             {/* Start Product Section */}
             <div className='container'>
-                <div className='row' style={{ marginTop: '8%' }}>
-                    <div className='col-3' >
+                <div className='row ' style={{ marginTop: '8%' }}>
+                    <div className='col-md-3' >
                         <div className='product'>
                             <h2>Crafted with excellent material.</h2>
                             <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
                             <button type="button" className="btn btn-dark">Explore</button>
                         </div>
                     </div>
-                    <div className='col-md-3'>
-                        <div class="card">
+                    <div className='col-md-3 '>
+                        <div class="card" style={{ border: 'none' }} >
                             <img alt="productimg1" src={cardimg1} />
                             <div class="card-body">
-                                <h3 class="card-title">Nordic Chair</h3>
+                                <h5 class="card-title">Nordic Chair</h5>
                                 <p class="card-text">$50.00</p>
                             </div>
                         </div>
                     </div>
                     <div className='col-md-3'>
-                        <div class="card ">
+                        <div class="card" style={{ border: 'none' }}>
                             <img alt="productimg1" src={cardimg2} />
                             <div class="card-body">
                                 <h5 class="card-title">Kruzo Aero Chair</h5>
@@ -63,7 +69,7 @@ function Hero() {
                         </div>
                     </div>
                     <div className='col-md-3'>
-                        <div class="card ">
+                        <div class="card" style={{ border: 'none' }}>
                             <img alt="productimg1" src={cardimg3} />
                             <div class="card-body">
                                 <h5 class="card-title">Ergonomic Chair</h5>
@@ -74,6 +80,62 @@ function Hero() {
                 </div>
             </div>
             {/* End Product Section */}
+
+            {/* {Why Choose Us Secton} */}
+            <div className='container'>
+                <div className="row" style={{ marginTop: '10%' }}>
+                    <div className="col-lg-6">
+                        <div className="whychoosus">
+                            <h2>Why Choose Us</h2>
+                            <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+                        </div>
+                        <div className="row">
+                            <div className="col-md-6">
+                                <div className="feature">
+                                    <div className="image-container">
+                                        <img alt="truckImg" src={truck} />
+                                    </div>
+                                    <h3>Fast & Free Shipping</h3>
+                                    <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+                                </div>
+                            </div>
+                            <div className="col-md-6">
+                                <div className="feature">
+                                    <div className="image-container">
+                                        <img alt="bagImg" src={bag} />
+                                    </div>
+                                    <h3>Easy to Shop</h3>
+                                    <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+                                </div>
+                            </div>
+                            <div className="col-md-6">
+                                <div className="feature">
+                                    <div className="image-container">
+                                        <img alt="supportImg" src={support} />
+                                    </div>
+                                    <h3>24/7 Support</h3>
+                                    <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+                                </div>
+                            </div>
+                            <div className="col-md-6">
+                                <div className="feature">
+                                    <div className="image-container">
+                                    <img alt="returnImg" src={retrn} />
+                                    </div>
+                                    <h3>Hassle Free Returns</h3>
+                                    <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-6">
+                        <div className="chooseusImg">
+                            <img alt="chooseus" src={whychooseus} />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* {Why Choose Us Secton End} */}
         </>
     );
 }
