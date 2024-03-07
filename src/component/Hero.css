@@ -219,4 +219,25 @@ body {
     background-repeat: no-repeat;
     z-index: -1;
 }
+.secsection{
+    width: 100%;
+    position: relative;
+}
+.secsection h2{
+    width: 421px;
+    font-weight: 500;
+    font-size: 33px;
+}
+.listStyle li{
+    list-style: none;
+}
+.listStyle li::before {
+    content: "";
+    display: inline-block;
+    width: 8px; 
+    height: 8px; 
+    border-radius: 50%; 
+    border: 2px solid #35736E; 
+    margin-right: 10px; 
 
+}

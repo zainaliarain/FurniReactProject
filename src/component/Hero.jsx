@@ -148,6 +148,19 @@ function Hero() {
                                 <img className="grid-img3" src={grid3} alt="gridimg3" />
                             </div>
                         </div>
+                        <div className="col-5">
+
+                        <div className="secsection">
+                        <h2>We Help You Make Modern Interior Design</h2>
+                        <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+                        <ul className='listStyle'>
+                            <li>Donec vitae odio quis nisl dapibus malesuada</li>
+                            <li>Donec vitae odio quis nisl dapibus malesuada</li>
+                            <li>Donec vitae odio quis nisl dapibus malesuada</li>
+                            <li>Donec vitae odio quis nisl dapibus malesuada</li>
+                        </ul>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
