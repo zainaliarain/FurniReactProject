@@ -224,12 +224,24 @@ body {
     position: relative;
 }
 .secsection h2{
-    width: 421px;
+    width: 100%;
     font-weight: 500;
     font-size: 33px;
 }
-.listStyle li{
+.secsection p{
+    width: 80%;
+    font-size: small;
+}
+.listStyle{
     list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.listStyle li{
+   
+    font-size: small;
 }
 .listStyle li::before {
     content: "";
@@ -239,5 +251,33 @@ body {
     border-radius: 50%; 
     border: 2px solid #35736E; 
     margin-right: 10px; 
-
 }
+.secsection button {
+    border-radius: 30px;
+    width: 97px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+/* .pProduct{
+    width: 100%;
+    
+ }  */
+.pProduct img{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    z-index: 1;     
+}
+.pProduct::before{
+    content: "";
+    position: absolute;
+    background-color: #DCE5E4;
+    border-radius: 20px;
+    height: 100px;
+    width: 100px;
+    top: 12px;
+    left: 8px;
+}
+    
+
+

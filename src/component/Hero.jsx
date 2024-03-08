@@ -132,7 +132,7 @@ function Hero() {
                                 <img alt="chooseus" src={whychooseus} />
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </div>
             {/* {End Why Choose Us Secton} */}
@@ -140,7 +140,7 @@ function Hero() {
             {/* {Start We Help Section} */}
             <div className="helpsection">
                 <div className="container">
-                    <div className="row" style={{marginTop: '15%'}}>
+                    <div className="row" style={{ marginTop: '15%' }}>
                         <div className="col-7">
                             <div className="img-grid">
                                 <img className="grid-img1" src={grid1} alt="gridimg1" />
@@ -149,23 +149,59 @@ function Hero() {
                             </div>
                         </div>
                         <div className="col-5">
-
-                        <div className="secsection">
-                        <h2>We Help You Make Modern Interior Design</h2>
-                        <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
-                        <ul className='listStyle'>
-                            <li>Donec vitae odio quis nisl dapibus malesuada</li>
-                            <li>Donec vitae odio quis nisl dapibus malesuada</li>
-                            <li>Donec vitae odio quis nisl dapibus malesuada</li>
-                            <li>Donec vitae odio quis nisl dapibus malesuada</li>
-                        </ul>
+                            <div className="secsection">
+                                <h2>We Help You Make Modern Interior Design</h2>
+                                <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+                                <ul className='listStyle'>
+                                    <li>Donec vitae odio quis nisl dapibus malesuada</li>
+                                    <li>Donec vitae odio quis nisl dapibus malesuada</li>
+                                    <li>Donec vitae odio quis nisl dapibus malesuada</li>
+                                    <li>Donec vitae odio quis nisl dapibus malesuada</li>
+                                </ul>
+                                <button type="button" className="btn btn-dark">Explore</button>
+                            </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            {/* {End We Help Section} */}
+
+            {/* {Start Papular Product Section} */}
+            <div className="container">
+                <div className="row mt-5">
+                    <div className="col-4">
+                        <div class="card pProduct">
+                            <img alt="productimg1" src={cardimg1} />
+                            <div class="card-body productCardBody">
+                                <h5>Nordic Chair</h5>
+                                <p class="card-text">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+                                <a href="/path/to/page">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-4">
+                        <div class="card pProduct">
+                            <img alt="productimg1" src={cardimg2} />
+                            <div class="card-body productCardBody">
+                                <h5>Kruzo Aero Chair</h5>
+                                <p class="card-text">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+                                <a href="/path/to/page">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-4">
+                        <div class="card pProduct ">
+                            <img alt="productimg1" src={cardimg3} />
+                            <div class="card-body productCardBody">
+                                <h5>Ergonomic Chair</h5>
+                                <p class="card-text">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio</p>
+                                <a href="/path/to/page">Read More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* {End We Help Section} */}
         </>
     );
 }
