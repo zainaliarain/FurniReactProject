@@ -1,50 +1,65 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-regular-svg-icons';
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
-import './NavStyle.css';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-regular-svg-icons";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import "./NavStyle.css";
 function Nav() {
-    return (
+  // Difine the array for list
+  const navbarItems = [
+    { name: "Home", link: "#" },
+    { name: "Shop", link: "#" },
+    { name: "About us", link: "#" },
+    { name: "Services", link: "#" },
+    { name: "Blog", link: "#" },
+    { name: "Contact us", link: "#" },
+  ];
 
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
-            <div className="container-fluid" style={{ backgroundColor: '#3B5D50', pedding: '0' }}>
-                <a className="navbar-brand" href="#">Furni.</a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarNav"
+  return (
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <div
+        className="container-fluid"
+        style={{ backgroundColor: "#3B5D50", pedding: "0" }}
+      >
+        <a className="navbar-brand" href="/path/to/page">
+          Furni.
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            {/* {mapping for manu items and genrate the item list} */}
+            {navbarItems.map((item, index) => (
+              <li className="nav-item" key={index}>
+                <a
+                  className="nav-link active"
+                  aria-current="page"
+                  href={item.link}
                 >
-                    <ul className="navbar-nav" >
-                        <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Shop</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">About us</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Servies</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Blog</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Contact us</a>
-                        </li>
-                        <li className="nav-item">
-                            <FontAwesomeIcon icon={faUser} />
-                        </li>
-                        <li className="nav-item">
-                            <FontAwesomeIcon icon={faCartShopping} />
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        // </div>
-    );
+                  {item.name}
+                </a>
+              </li>
+            ))}
+            <li className="nav-item">
+              <FontAwesomeIcon icon={faUser} />
+            </li>
+            <li className="nav-item">
+              <FontAwesomeIcon icon={faCartShopping} />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    // </div>
+  );
 }
 
 export default Nav;
