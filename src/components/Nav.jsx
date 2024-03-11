@@ -18,7 +18,7 @@ function Nav() {
 
   return (
     <div>
-      <div> hello my feature 1 </div>
+      {/* <div> hello my feature 1 </div> */}
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div
           className="container-fluid"
