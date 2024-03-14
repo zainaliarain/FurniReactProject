@@ -13,6 +13,32 @@ import grid2 from "../images/img-grid-2.jpg";
 import grid3 from "../images/img-grid-3.jpg";
 
 function Hero() {
+  const feature = [
+    {
+      icon: truck,
+      title: "Fast & Free Shipping",
+      description:
+        "Donec vitae odio quis nisl dapibus malesuada. Nullam acaliquet velit. Aliquam vulputate.",
+    },
+    {
+      icon: bag,
+      title: "Easy to Shop",
+      description:
+        "Donec vitae odio quis nisl dapibus malesuada. Nullam acaliquet velit. Aliquam vulputate.",
+    },
+    {
+      icon: support,
+      title: "24/7 Support",
+      description:
+        "Donec vitae odio quis nisl dapibus malesuada. Nullam acaliquet velit. Aliquam vulputate.",
+    },
+    {
+      icon: retrn,
+      title: "Hassle Free Returns",
+      description:
+        "Donec vitae odio quis nisl dapibus malesuada. Nullam acaliquet velit. Aliquam vulputate.",
+    },
+  ];
   return (
     <div>
       {/* {Start Why Choose Us Section} */}
@@ -29,46 +55,15 @@ function Hero() {
                 </p>
               </div>
               <div className="row">
-                <div className="col-md-6">
-                  <div className="feature">
-                    <img alt="truckImg" src={truck} />
-                    <h3>Fast & Free Shipping</h3>
-                    <p>
-                      Donec vitae odio quis nisl dapibus malesuada. Nullam ac
-                      aliquet velit. Aliquam vulputate.
-                    </p>
+                {feature.map((feature, index) => (
+                  <div className="col-md-6" key={index}>
+                    <div className="feature">
+                      <img alt={`feature${index}`} src={feature.icon} />
+                      <h3>{feature.title}</h3>
+                      <p>{feature.description}</p>
+                    </div>
                   </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="feature">
-                    <img alt="bagImg" src={bag} />
-                    <h3>Easy to Shop</h3>
-                    <p>
-                      Donec vitae odio quis nisl dapibus malesuada. Nullam ac
-                      aliquet velit. Aliquam vulputate.
-                    </p>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="feature">
-                    <img alt="supportImg" src={support} />
-                    <h3>24/7 Support</h3>
-                    <p>
-                      Donec vitae odio quis nisl dapibus malesuada. Nullam ac
-                      aliquet velit. Aliquam vulputate.
-                    </p>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="feature">
-                    <img alt="returnImg" src={retrn} />
-                    <h3>Hassle Free Returns</h3>
-                    <p>
-                      Donec vitae odio quis nisl dapibus malesuada. Nullam ac
-                      aliquet velit. Aliquam vulputate.
-                    </p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
             <div className="col-6">
