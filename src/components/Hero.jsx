@@ -98,10 +98,11 @@ function Hero() {
                   malesuada
                 </p>
                 <ul className="listStyle">
-                  <li>Donec vitae odio quis nisl dapibus malesuada</li>
-                  <li>Donec vitae odio quis nisl dapibus malesuada</li>
-                  <li>Donec vitae odio quis nisl dapibus malesuada</li>
-                  <li>Donec vitae odio quis nisl dapibus malesuada</li>
+                  {Array.from({ length: 4 }).map((_, index) => (
+                    <li key={index}>
+                      Donec vitae odio quis nisl dapibus malesuada
+                    </li>
+                  ))}
                 </ul>
                 <button type="button" className="btn btn-dark">
                   Explore
