@@ -3,6 +3,7 @@ body {
   position: relative;
   width: 100%;
 }
+
 .body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -11,6 +12,30 @@ body {
   font-size: 14px;
   background-color: #eff2f1;
 }
+
+.outerStyle {
+  background-color: #3b5d50;
+  /* border: 2px solid black; */
+}
+
+#navbarNav {
+  padding: 0;
+}
+
+.innerStyle {
+  background-color: #3b5d50;
+  padding: 0;
+  /* border: 2px solid black; */
+}
+
+.innerStyle .navbar-brand {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 600;
+  /* margin-left: 10px; */
+}
+
+
 
 .hero {
   background-color: #3b5d50;
@@ -21,25 +46,30 @@ body {
   padding-bottom: 128px;
   height: 460px;
 }
+
 .hero .intro {
   position: relative;
   margin-top: 20%;
   max-width: 450;
 }
+
 .hero h1 {
   margin-bottom: 30px;
   font-weight: 700;
 }
+
 .hero p {
   color: rgba(255, 255, 255, 0.5);
   font-size: 100%;
   font-weight: 300;
   width: 82%;
 }
+
 .hero .wrape-img img {
   position: relative;
   width: 625px;
 }
+
 .hero .lightdot-img {
   position: absolute;
   background-image: url(../images/dots-light.svg);
@@ -50,6 +80,7 @@ body {
   right: 316px;
   top: 67px;
 }
+
 .hero-btn .btn1 {
   border-radius: 30px;
   color: #2f2f2f;
@@ -58,6 +89,7 @@ body {
   margin: 20px;
   width: 130px;
 }
+
 .hero-btn .btn2 {
   border-radius: 30px;
   font-weight: 500;
@@ -67,25 +99,30 @@ body {
   border-color: rgba(255, 255, 255, 0.3);
   margin-left: -12px;
 }
+
 .productSection {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 .product h2 {
   font-weight: 400;
   font-size: 2rem;
   width: 99%;
 }
+
 .product p {
   font-size: 12px;
   margin-top: 15px;
   width: 82%;
 }
+
 .product button {
   border-radius: 30px;
   width: 97px;
   margin-top: 10px;
 }
+
 .productCard {
   width: 100%;
   position: relative;
@@ -104,27 +141,33 @@ body {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 .chooseUsSection {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 .whychoosus {
   display: block;
   position: relative;
 }
+
 .whychoosus h2 {
   font-size: 2rem;
   font-weight: 500;
 }
+
 .whychoosus p {
   margin-bottom: 60px;
   font-size: 1rem;
   font-weight: 400;
 }
+
 .feature h3 {
   font-size: medium;
   margin-top: 20px;
 }
+
 .feature p {
   font-size: smaller;
   margin-bottom: 20px;
@@ -134,6 +177,7 @@ body {
   display: inline-block;
   position: relative;
 }
+
 .feature::before {
   content: "";
   position: absolute;
@@ -145,10 +189,12 @@ body {
   border-radius: 100%;
   z-index: -1;
 }
+
 .chooseus {
   height: 100%;
   width: 100%;
 }
+
 .chooseus img {
   position: relative;
   margin-left: 113px;
@@ -156,10 +202,12 @@ body {
   width: 85%;
   height: 100%;
 }
+
 .chooseus {
   position: relative;
   /* display: inline-block; */
 }
+
 .chooseus::before {
   content: "";
   position: absolute;
@@ -175,14 +223,17 @@ body {
   margin-top: 100px;
   margin-bottom: 200px;
 }
+
 .img-grid {
   position: relative;
 }
+
 .img-grid .grid-img1 {
   height: 100%;
   width: 65%;
   border-radius: 20px;
 }
+
 .img-grid .grid-img2 {
   height: 234px;
   width: 30%;
@@ -214,19 +265,23 @@ body {
   background-repeat: no-repeat;
   z-index: -1;
 }
+
 .secsection {
   width: 100%;
   position: relative;
 }
+
 .secsection h2 {
   width: 100%;
   font-weight: 500;
   font-size: 33px;
 }
+
 .secsection p {
   width: 80%;
   font-size: small;
 }
+
 .listStyle {
   list-style: none;
   display: grid;
@@ -237,6 +292,7 @@ body {
 .listStyle li {
   font-size: small;
 }
+
 .listStyle li::before {
   content: "";
   display: inline-block;
@@ -246,12 +302,14 @@ body {
   border: 2px solid #35736e;
   margin-right: 10px;
 }
+
 .secsection button {
   border-radius: 30px;
   width: 97px;
   margin-top: 10px;
   margin-left: 20px;
 }
+
 /* .pProduct{
     width: 100%;
     
@@ -262,6 +320,7 @@ body {
   position: relative;
   z-index: 1;
 }
+
 .pProduct::before {
   content: "";
   position: absolute;

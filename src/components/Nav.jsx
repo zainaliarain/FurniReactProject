@@ -19,13 +19,13 @@ function Nav() {
   return (
     <div>
       {/* <div> hello my feature 1 </div> */}
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div
-          className="container-fluid"
-          style={{ backgroundColor: "#3B5D50", pedding: "0" }}
-        >
+      <nav
+        className="navbar navbar-expand-lg  outerStyle"
+        style={{ paddingTop: "20px", paddingBottom: "20px" }}
+      >
+        <div className="container innerStyle">
           <a className="navbar-brand" href="/path/to/page">
-            Furni.
+            Furni <span>.</span>
           </a>
           <button
             className="navbar-toggler"
@@ -38,7 +38,7 @@ function Nav() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
+          <div className="collapse navbar-collapse " id="navbarNav">
             <ul className="navbar-nav">
               {/* {mapping for manu items and genrate the item list} */}
 
