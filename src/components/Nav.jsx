@@ -25,7 +25,7 @@ function Nav() {
       >
         <div className="container innerStyle">
           <a className="navbar-brand" href="/path/to/page">
-            Furni <span>.</span>
+            Furni <span className="dotStyle">.</span>
           </a>
           <button
             className="navbar-toggler"
@@ -38,10 +38,11 @@ function Nav() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse " id="navbarNav">
-            <ul className="navbar-nav">
-              {/* {mapping for manu items and genrate the item list} */}
 
+          <div className=" collapse navbar-collapse " id="navbarNav">
+            {/* {mapping for manu items and genrate the item list} */}
+
+            <ul className="ulStyle navbar-nav ">
               {navbarItems.map((item, index) => (
                 <li className="nav-item" key={index}>
                   <a
