@@ -13,37 +13,6 @@ body {
   background-color: #eff2f1;
 }
 
-.outerStyle {
-  background-color: #3b5d50;
-  /* border: 2px solid black; */
-}
-
-#navbarNav {
-  padding: 0;
-}
-
-.innerStyle {
-  background-color: #3b5d50;
-  padding: 0;
-  /* border: 2px solid black; */
-}
-
-/* .innerStyle .navbar-brand {
-  color: #ffffff;
-  font-size: 32px;
-  font-weight: 600;
-  /* margin-left: 10px; 
-} */
-/* .ulstyle {
-  padding: 22px;
-}
-
-*/
-.dotStyle {
-  color: white;
-  margin-left: 10px;
-}
-
 .hero {
   background-color: #3b5d50;
   margin: 0px;
