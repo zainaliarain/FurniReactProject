@@ -44,10 +44,24 @@
             /* Change border color on hover */
         }
 
+        .navbar li a {
+            text-decoration: none;
+            /* Remove default underline */
+            color: inherit;
+            /* Inherit text color */
+            transition: all 0.3s;
+            /* Add transition effect */
+        }
+
+        .navbar li:hover a {
+            color: rgb(7, 223, 223);
+            /* Change text color on hover */
+        }
+
         .navbar h2 {
-            /* color: aqua; */
+            color: aqua;
             margin: 0;
-            /* border: 2px solid black; */
+            border: 2px solid black;
             padding: 5px 10px;
         }
     </style>
@@ -57,10 +71,10 @@
     <div class="navbar">
         <h2>Logo</h2>
         <ul>
-            <li>home</li>
-            <li>gallery</li>
-            <li>about</li>
-            <li>contact</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </div>
 </body>
