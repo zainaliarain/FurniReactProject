@@ -92,6 +92,11 @@ body {
   margin-bottom: 30px;
   text-decoration: none;
   padding: 10px;
+  transition: transform 0.1s ease;
+}
+.productCard:hover {
+  transform: translateY(-15px);
+  /* color: #eff2f1; */
 }
 
 /* .card img {

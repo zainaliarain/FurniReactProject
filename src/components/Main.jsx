@@ -79,8 +79,8 @@ function Main() {
               </div>
             </div>
             <div className="col-md-3">
-              <div class="card" style={{ border: "none" }}>
-                <img alt="productimg1 productCard" src={cardimg3} />
+              <div class="card productCard" style={{ border: "none" }}>
+                <img alt="productimg1" src={cardimg3} />
                 <div class="card-body">
                   <h5 class="card-title">Ergonomic Chair</h5>
                   <p class="card-text">$43.00</p>
