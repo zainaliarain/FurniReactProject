@@ -108,6 +108,7 @@ body {
   padding: 10px;
   transition: transform 0.1s ease;
 }
+
 .productCard:hover {
   transform: translateY(-15px);
   /* color: #eff2f1; */
@@ -311,4 +312,22 @@ body {
   width: 100px;
   top: 12px;
   left: 8px;
+}
+
+
+.cardBody {
+  margin-top: -10px;
+  width: 300px;
+  margin-left: -32px;
+}
+
+
+
+.cardBody h5 {
+  font-size: 19px;
+}
+
+.cardBody a {
+  text-decoration: none;
+  color: #2f2f2f;
 }

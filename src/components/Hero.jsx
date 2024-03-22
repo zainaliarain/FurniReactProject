@@ -81,7 +81,7 @@ function Hero() {
             {/* mapping for featureCards and genrate the list  */}
             {featureCards.map((featureCards, index) => (
               <div className="col-md-3 " key={index}>
-                <div class="card productCard" style={{ border: "none" }}>
+                <div class="card productCard " style={{ border: "none" }}>
                   <img alt="productimg" src={featureCards.icon} />
                   <div class="card-body">
                     <h5 class="card-title">{featureCards.title}</h5>

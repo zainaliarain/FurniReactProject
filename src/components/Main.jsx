@@ -100,7 +100,6 @@ function Main() {
         </div>
       </section>
       {/* {End Why Choose Us Secton} */}
-
       {/* {Start We Help Section} */}
       <section className="helpsection">
         <div className="container">
@@ -140,25 +139,117 @@ function Main() {
         </div>
       </section>
       {/* {End We Help Section} */}
-
       {/* {Start Papular Product Section} */}
-      <section className="container">
-        <div className="row mt-5">
+      <section className="container ">
+        <div className="row mt-5 mb-5">
           {/* {mapping for productSection items and genrate the list} */}
           {productSection.map((productSection, index) => (
             <div className="col-4" key={index}>
-              <div class="card pProduct">
-                <img alt="productimg1" src={productSection.icon} />
-                <div class="card-body productCardBody">
-                  <h5>{productSection.title}</h5>
-                  <p class="card-text">{productSection.description}</p>
-                  <a href={productSection.link}>Read More</a>
+              <div class="card" style={{ border: "none" }}>
+                <div className="row no-gutters">
+                  <div className="col-4 pProduct">
+                    <img alt="productimg1" src={productSection.icon} />
+                  </div>
+                  <div className="col-8">
+                    <div class="card-body cardBody">
+                      <h5>{productSection.title}</h5>
+                      <p class="card-text">{productSection.description}</p>
+                      <a href={productSection.link}>Read More</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </section>
+      {/* {End Papular Product Section} */}
+
+      {/* Start Testimonials Section */}
+      <div className="contianer ">
+        <div className="row mt-5 mb-5">
+          <div className="col-12">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>
+                      Some representative placeholder content for the first
+                      slide.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>
+                      Some representative placeholder content for the second
+                      slide.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>
+                      Some representative placeholder content for the third
+                      slide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* End Testimonials Section */}
     </div>
   );
 }
