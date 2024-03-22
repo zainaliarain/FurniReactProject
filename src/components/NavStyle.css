@@ -1,13 +1,54 @@
 #navbarNav {
-  margin-left: 50%;
-  font-size: 14px;
-  font-family: sans-serif;
-  
-  /* color: #ffffff; */
+  margin-left: 35%;
+  /* font-size: 14px; */
+
+
+
 }
+
 #navbarNav .nav-item {
-  margin-right: 10px; /* Adjust this value to increase the gap */
+  color: white;
+  /* font-size: 15px; */
+  font-weight: 600;
+  margin: 10px;
+  padding: 10px;
+  display: block;
+
+}
+
+.outerStyle {
+  background-color: #3b5d50;
+
+}
+
+/* #navbarNav {
+  padding: 0;
+} */
+
+.innerStyle {
+  background-color: #3b5d50;
+  padding: 0;
+
+}
+
+.logoStyle {
+  color: #ffffff !important;
+  font-size: 32px !important;
+  font-weight: 600 !important;
+  margin-left: 10px !important;
+
+}
+
+
+.dotStyle {
+  color: #899E96;
+  margin-left: -8px;
+  font-size: 48px;
 }
 
 
 
+.active {
+
+  color: rgb(124, 138, 167);
+}

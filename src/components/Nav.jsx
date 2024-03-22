@@ -2,16 +2,17 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import "./NavStyle.css";
+import { Link } from "react-router-dom";
 function Nav() {
   // {Difine the array for list}
 
   const navbarItems = [
-    { name: "Home", link: "#" },
-    { name: "Shop", link: "#" },
-    { name: "About us", link: "#" },
+    { name: "Home", link: "hero" },
+    { name: "Shop", link: "/shop" },
+    { name: "About\u00A0us", link: "#" },
     { name: "Services", link: "#" },
     { name: "Blog", link: "#" },
-    { name: "Contact us", link: "#" },
+    { name: "Contact\u00A0us", link: "#" }, // Using non-breaking space
     { icon: faUser, link: "#" },
     { icon: faCartShopping, link: "#" },
   ];
@@ -19,13 +20,13 @@ function Nav() {
   return (
     <div>
       {/* <div> hello my feature 1 </div> */}
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div
-          className="container-fluid"
-          style={{ backgroundColor: "#3B5D50", pedding: "0" }}
-        >
-          <a className="navbar-brand" href="/path/to/page">
-            Furni.
+      <nav
+        className="navbar navbar-expand-lg  outerStyle"
+        style={{ paddingTop: "10px", paddingBottom: "10px" }}
+      >
+        <div className="container innerStyle">
+          <a className="logoStyle navbar-brand" href="/path/to/page">
+            Furni <span className="dotStyle">.</span>
           </a>
           <button
             className="navbar-toggler"
@@ -38,20 +39,22 @@ function Nav() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              {/* {mapping for manu items and genrate the item list} */}
 
+          <div className=" collapse navbar-collapse " id="navbarNav">
+            {/* {mapping for manu items and genrate the item list} */}
+
+            <ul className="navbardNav navbar-nav ">
               {navbarItems.map((item, index) => (
-                <li className="nav-item" key={index}>
-                  <a
+                <li className=" nav-item" key={index}>
+                  <Link
                     className="nav-link active"
+                    to={item.link}
                     aria-current="page"
-                    href={item.link}
+                    style={{ color: "#EFF2F1 " }}
                   >
                     {item.name}
-                    <FontAwesomeIcon icon={item.icon} />
-                  </a>
+                    {item.icon && <FontAwesomeIcon icon={item.icon} />}
+                  </Link>
                 </li>
               ))}
             </ul>
