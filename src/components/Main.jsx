@@ -11,6 +11,7 @@ import cardimg3 from "../images/product-3.png";
 import grid1 from "../images/img-grid-1.jpg";
 import grid2 from "../images/img-grid-2.jpg";
 import grid3 from "../images/img-grid-3.jpg";
+import sliderImg from "../images/person-1.jpg";
 
 function Main() {
   const feature = [
@@ -166,66 +167,93 @@ function Main() {
       {/* {End Papular Product Section} */}
 
       {/* Start Testimonials Section */}
-      <div className="contianer ">
+      <div className="contianer " style={{ border: "2px solid black" }}>
         <div className="row mt-5 mb-5">
-          <div className="col-12">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleDark"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleDark"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleDark"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
+          <div className="col-12" style={{ border: "2px solid black" }}>
+            <h2>Testimonials</h2>
+            <div
+              id="carouselExampleControlsNoTouching"
+              class="carousel slide"
+              data-bs-touch="false"
+            >
               <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>
-                      Some representative placeholder content for the first
-                      slide.
-                    </p>
-                  </div>
+                <div
+                  class="carousel-item active "
+                  style={{ width: "50%", textAlign: "center" }}
+                >
+                  {/* <img src="..." class="d-block w-100" alt="..."> */}
+                  <p>
+                    “Donec facilisis quam ut purus rutrum lobortis. Donec vitae
+                    odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
+                    Aliquam vulputate velit imperdiet dolor tempor tristique.
+                    Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada fames ac turpis egestas. Integer convallis
+                    volutpat dui quis scelerisque.”
+                  </p>
+                  <img
+                    alt="SliderImg"
+                    src={sliderImg}
+                    style={{
+                      width: "90px",
+                      height: "90px",
+                      borderRadius: "50px",
+                    }}
+                  />
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>
-                      Some representative placeholder content for the second
-                      slide.
-                    </p>
-                  </div>
+                <div
+                  class="carousel-item"
+                  style={{ width: "50%", textAlign: "center" }}
+                >
+                  {/* <img src="..." class="d-block w-100" alt="..."> */}
+                  <p>
+                    “Donec facilisis quam ut purus rutrum lobortis. Donec vitae
+                    odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
+                    Aliquam vulputate velit imperdiet dolor tempor tristique.
+                    Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada fames ac turpis egestas. Integer convallis
+                    volutpat dui quis scelerisque.”
+                  </p>
+
+                  <img
+                    alt="SliderImg"
+                    src={sliderImg}
+                    style={{
+                      width: "90px",
+                      height: "90px",
+                      borderRadius: "50px",
+                    }}
+                  />
                 </div>
-                <div class="carousel-item">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>
-                      Some representative placeholder content for the third
-                      slide.
-                    </p>
-                  </div>
+                <div
+                  class="carousel-item"
+                  style={{ width: "50%", textAlign: "center" }}
+                >
+                  {/* <img src="..." class="d-block w-100" alt="..."> */}
+                  <p>
+                    “Donec facilisis quam ut purus rutrum lobortis. Donec vitae
+                    odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
+                    Aliquam vulputate velit imperdiet dolor tempor tristique.
+                    Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada fames ac turpis egestas. Integer convallis
+                    volutpat dui quis scelerisque.”
+                  </p>
+                  <img
+                    alt="SliderImg"
+                    src={sliderImg}
+                    style={{
+                      width: "90px",
+                      height: "90px",
+                      borderRadius: "50px",
+                    }}
+                  />
                 </div>
               </div>
               <button
                 class="carousel-control-prev"
                 type="button"
-                data-bs-target="#carouselExampleDark"
+                data-bs-target="#carouselExampleControlsNoTouching"
                 data-bs-slide="prev"
+                style={{ border: "2px solid black", background: "black" }}
               >
                 <span
                   class="carousel-control-prev-icon"
@@ -236,8 +264,9 @@ function Main() {
               <button
                 class="carousel-control-next"
                 type="button"
-                data-bs-target="#carouselExampleDark"
+                data-bs-target="#carouselExampleControlsNoTouching"
                 data-bs-slide="next"
+                style={{ border: "2px solid black", background: "black" }}
               >
                 <span
                   class="carousel-control-next-icon"
