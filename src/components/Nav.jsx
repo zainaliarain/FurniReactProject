@@ -19,7 +19,6 @@ function Nav() {
 
   return (
     <div>
-      {/* <div> hello my feature 1 </div> */}
       <nav
         className="navbar navbar-expand-lg  outerStyle"
         style={{ paddingTop: "10px", paddingBottom: "10px" }}

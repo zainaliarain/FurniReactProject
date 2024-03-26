@@ -64,6 +64,15 @@ function Main() {
       link: "#",
     },
   ];
+  const testimonials = [
+    {
+      paragraph:
+        "“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”",
+    },
+    { icon: sliderImg },
+    { title: "Maria Jones" },
+    { description: "CEO, Co-Founder, XYZ Inc." },
+  ];
   return (
     <div>
       {/* {Start Why Choose Us Section} */}
@@ -81,6 +90,7 @@ function Main() {
               </div>
               <div className="row">
                 {/* {mapping for feature items and genrate the list} */}
+
                 {feature.map((feature, index) => (
                   <div className="col-md-6" key={index}>
                     <div className="feature">
@@ -101,6 +111,7 @@ function Main() {
         </div>
       </section>
       {/* {End Why Choose Us Secton} */}
+
       {/* {Start We Help Section} */}
       <section className="helpsection">
         <div className="container">
@@ -140,10 +151,12 @@ function Main() {
         </div>
       </section>
       {/* {End We Help Section} */}
+
       {/* {Start Papular Product Section} */}
       <section className="container ">
         <div className="row mt-5 mb-5">
           {/* {mapping for productSection items and genrate the list} */}
+
           {productSection.map((productSection, index) => (
             <div className="col-4" key={index}>
               <div class="card" style={{ border: "none" }}>
@@ -177,76 +190,28 @@ function Main() {
               data-bs-touch="false"
             >
               <div class="carousel-inner">
-                <div
-                  class="carousel-item active "
-                  style={{ width: "50%", textAlign: "center" }}
-                >
-                  {/* <img src="..." class="d-block w-100" alt="..."> */}
-                  <p>
-                    “Donec facilisis quam ut purus rutrum lobortis. Donec vitae
-                    odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
-                    Aliquam vulputate velit imperdiet dolor tempor tristique.
-                    Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada fames ac turpis egestas. Integer convallis
-                    volutpat dui quis scelerisque.”
-                  </p>
-                  <img
-                    alt="SliderImg"
-                    src={sliderImg}
-                    style={{
-                      width: "90px",
-                      height: "90px",
-                      borderRadius: "50px",
-                    }}
-                  />
-                </div>
-                <div
-                  class="carousel-item"
-                  style={{ width: "50%", textAlign: "center" }}
-                >
-                  {/* <img src="..." class="d-block w-100" alt="..."> */}
-                  <p>
-                    “Donec facilisis quam ut purus rutrum lobortis. Donec vitae
-                    odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
-                    Aliquam vulputate velit imperdiet dolor tempor tristique.
-                    Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada fames ac turpis egestas. Integer convallis
-                    volutpat dui quis scelerisque.”
-                  </p>
-
-                  <img
-                    alt="SliderImg"
-                    src={sliderImg}
-                    style={{
-                      width: "90px",
-                      height: "90px",
-                      borderRadius: "50px",
-                    }}
-                  />
-                </div>
-                <div
-                  class="carousel-item"
-                  style={{ width: "50%", textAlign: "center" }}
-                >
-                  {/* <img src="..." class="d-block w-100" alt="..."> */}
-                  <p>
-                    “Donec facilisis quam ut purus rutrum lobortis. Donec vitae
-                    odio quis nisl dapibus malesuada. Nullam ac aliquet velit.
-                    Aliquam vulputate velit imperdiet dolor tempor tristique.
-                    Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada fames ac turpis egestas. Integer convallis
-                    volutpat dui quis scelerisque.”
-                  </p>
-                  <img
-                    alt="SliderImg"
-                    src={sliderImg}
-                    style={{
-                      width: "90px",
-                      height: "90px",
-                      borderRadius: "50px",
-                    }}
-                  />
-                </div>
+                {testimonials.map((testimonials, index) => (
+                  <div
+                    class="carousel-item active "
+                    key={index}
+                    style={{ width: "50%", textAlign: "center" }}
+                  >
+                    <p>{testimonials.paragraph}</p>
+                    <div className="testimonial">
+                      <img
+                        alt="SliderImg"
+                        src={testimonials.icon}
+                        style={{
+                          width: "90px",
+                          height: "90px",
+                          borderRadius: "50px",
+                        }}
+                      />
+                      <h4>{testimonials.title}</h4>
+                      <span>{testimonials.description}</span>
+                    </div>
+                  </div>
+                ))}
               </div>
               <button
                 class="carousel-control-prev"
