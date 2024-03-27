@@ -11,7 +11,6 @@ import cardimg3 from "../images/product-3.png";
 import grid1 from "../images/img-grid-1.jpg";
 import grid2 from "../images/img-grid-2.jpg";
 import grid3 from "../images/img-grid-3.jpg";
-import sliderImg from "../images/person-1.jpg";
 
 function Main() {
   const feature = [
@@ -64,15 +63,7 @@ function Main() {
       link: "#",
     },
   ];
-  const testimonials = [
-    {
-      paragraph:
-        "“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.”",
-    },
-    { icon: sliderImg },
-    { title: "Maria Jones" },
-    { description: "CEO, Co-Founder, XYZ Inc." },
-  ];
+
   return (
     <div>
       {/* {Start Why Choose Us Section} */}
@@ -178,72 +169,6 @@ function Main() {
         </div>
       </section>
       {/* {End Papular Product Section} */}
-
-      {/* Start Testimonials Section */}
-      <div className="contianer " style={{ border: "2px solid black" }}>
-        <div className="row mt-5 mb-5">
-          <div className="col-12" style={{ border: "2px solid black" }}>
-            <h2>Testimonials</h2>
-            <div
-              id="carouselExampleControlsNoTouching"
-              class="carousel slide"
-              data-bs-touch="false"
-            >
-              <div class="carousel-inner">
-                {testimonials.map((testimonials, index) => (
-                  <div
-                    class="carousel-item active "
-                    key={index}
-                    style={{ width: "50%", textAlign: "center" }}
-                  >
-                    <p>{testimonials.paragraph}</p>
-                    <div className="testimonial">
-                      <img
-                        alt="SliderImg"
-                        src={testimonials.icon}
-                        style={{
-                          width: "90px",
-                          height: "90px",
-                          borderRadius: "50px",
-                        }}
-                      />
-                      <h4>{testimonials.title}</h4>
-                      <span>{testimonials.description}</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleControlsNoTouching"
-                data-bs-slide="prev"
-                style={{ border: "2px solid black", background: "black" }}
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleControlsNoTouching"
-                data-bs-slide="next"
-                style={{ border: "2px solid black", background: "black" }}
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* End Testimonials Section */}
     </div>
   );
 }

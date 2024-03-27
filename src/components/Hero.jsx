@@ -5,6 +5,7 @@ import cardimg1 from "../images/product-1.png";
 import cardimg2 from "../images/product-2.png";
 import cardimg3 from "../images/product-3.png";
 import Main from "../components/Main";
+import Testimonial from "./Testimonial";
 
 function Hero() {
   const featureCards = [
@@ -96,6 +97,7 @@ function Hero() {
       </section>
       {/* End Product Section */}
       <Main />
+      <Testimonial />
     </div>
   );
 }
