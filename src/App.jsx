@@ -3,8 +3,7 @@ import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Main from "./components/Main";
 import Shop from "./components/Shop";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 import { Routes, Route } from "react-router-dom";
 
 function App() {
