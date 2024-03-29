@@ -34,7 +34,7 @@ function Testimonial() {
         <div className="row mt-5 mb-5">
           <div
             className="col-12 outerTesti"
-            style={{ border: "2px solid black" }}
+            // style={{ border: "2px solid black" }}
           >
             <h2>Testimonials</h2>
             <div
@@ -43,6 +43,31 @@ function Testimonial() {
               data-bs-touch="false"
             >
               <div className="carousel-inner innerTestiStyle">
+                <div
+                  class="carousel-indicators"
+                  style={{ backgroundColor: "red" }}
+                >
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
                 {testimonials.map((testimonials, index) => (
                   <div
                     className={`carousel-item ${index === 0 ? "active" : ""}`}
@@ -54,7 +79,10 @@ function Testimonial() {
                     >
                       <div className="col-lg-10 max-auto maintestimonail">
                         {/* <div className="testimonial maintestimonail"> */}
-                        <p>{testimonials.paragraph}</p>
+                        <blockquote>
+                          <p>{testimonials.paragraph}</p>
+                        </blockquote>
+
                         <img alt="SliderImg" src={testimonials.icon} />
                         <h4>{testimonials.title}</h4>
                         <span style={{ margin: "0" }}>
@@ -67,17 +95,10 @@ function Testimonial() {
                 ))}
               </div>
               <button
-                className="carousel-control-prev"
+                className="carousel-control-prev testibutton"
                 type="button"
                 data-bs-target="#carouselExampleControlsNoTouching"
                 data-bs-slide="prev"
-                style={{
-                  border: "1px solid black",
-                  background: "black",
-                  height: "60px",
-                  width: "60px",
-                  borderRadius: "30px",
-                }}
               >
                 <span
                   className="carousel-control-prev-icon"
@@ -86,21 +107,13 @@ function Testimonial() {
                 <span className="visually-hidden">Previous</span>
               </button>
               <button
-                className="carousel-control-next"
+                className="carousel-control-next testibutton"
                 type="button"
                 data-bs-target="#carouselExampleControlsNoTouching"
                 data-bs-slide="next"
-                style={{
-                  border: "1px solid black",
-                  background: "black",
-                  height: "60px",
-                  width: "60px",
-                  borderRadius: "30px",
-                  marginTop: "20px",
-                }}
               >
                 <span
-                  className="carousel-control-next-icon"
+                  className="carousel-control-next-icon "
                   aria-hidden="true"
                 ></span>
                 <span className="visually-hidden">Next</span>

@@ -1,3 +1,7 @@
+.outerTesti {
+    margin-bottom: 30px;
+}
+
 .outerTesti h2 {
     text-align: center;
     color: #2f2f2f;
@@ -23,7 +27,8 @@
     line-height: 32px;
     margin-top: 10px;
     margin-bottom: 40px;
-    text-align: center;
+    text-align: justify;
+
 }
 
 .maintestimonail img {
@@ -37,3 +42,26 @@
     font-size: large;
     margin-top: 20px;
 }
+
+.carousel-control-prev.testibutton,
+.carousel-control-next.testibutton {
+    /* border: 1px solid rgb(193, 3, 3); */
+    background-color: #3B5D50;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    margin-top: 11%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.carousel-indicators {
+    border: 1px solid black;
+}
+
+/* .carousel-indicators button {
+    background-color: #092222;
+} */
+/* #carouselExampleControlsNoTouching {
+    background-color: red;
+} */
