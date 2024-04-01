@@ -6,6 +6,7 @@ import cardimg2 from "../images/product-2.png";
 import cardimg3 from "../images/product-3.png";
 import Main from "../components/Main";
 import Testimonial from "./Testimonial";
+import Blog from "./Blog";
 
 function Hero() {
   const featureCards = [
@@ -61,7 +62,6 @@ function Hero() {
         </div>
       </section>
       {/* End Hero Section */}
-
       {/* Start Product Section */}
       <section className="productSection">
         <div className="container">
@@ -98,6 +98,7 @@ function Hero() {
       {/* End Product Section */}
       <Main />
       <Testimonial />
+      <Blog />
     </div>
   );
 }

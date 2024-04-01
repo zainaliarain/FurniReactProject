@@ -32,92 +32,86 @@ function Testimonial() {
       {/* Start Testimonials Section */}
       <section className="container-fluid">
         <div className="row mt-5 mb-5">
-          <div
-            className="col-12 outerTesti"
-            // style={{ border: "2px solid black" }}
-          >
+          <div className="col-12 outerTesti">
             <h2>Testimonials</h2>
-            <div
-              id="carouselExampleControlsNoTouching"
-              className="carousel slide"
-              data-bs-touch="false"
-            >
-              <div className="carousel-inner innerTestiStyle">
+            <div className="row">
+              <div className="col-lg-10 max-auto maintestimonail">
+                {/* Testimonial content */}
                 <div
-                  class="carousel-indicators"
-                  style={{ backgroundColor: "red" }}
+                  id="carouselExampleControlsNoTouching"
+                  className="carousel slide"
+                  data-bs-touch="false"
                 >
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleControlsNoTouching"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleControlsNoTouching"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                  ></button>
-                  <button
-                    type="button"
-                    data-bs-target="#carouselExampleControlsNoTouching"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"
-                  ></button>
-                </div>
-                {testimonials.map((testimonials, index) => (
-                  <div
-                    className={`carousel-item ${index === 0 ? "active" : ""}`}
-                    key={index}
-                  >
-                    <div
-                      className="row mt-2"
-                      // style={{ justifyContent: "center" }}
-                    >
-                      <div className="col-lg-10 max-auto maintestimonail">
-                        {/* <div className="testimonial maintestimonail"> */}
+                  <div className="carousel-inner innerTestiStyle">
+                    {/* Testimonial details */}
+                    {testimonials.map((testimonial, index) => (
+                      <div
+                        className={`carousel-item ${
+                          index === 0 ? "active" : ""
+                        }`}
+                        key={index}
+                      >
                         <blockquote>
-                          <p>{testimonials.paragraph}</p>
+                          <p>{testimonial.paragraph}</p>
                         </blockquote>
-
-                        <img alt="SliderImg" src={testimonials.icon} />
-                        <h4>{testimonials.title}</h4>
+                        <img alt="SliderImg" src={testimonial.icon} />
+                        <h4>{testimonial.title}</h4>
                         <span style={{ margin: "0" }}>
-                          {testimonials.description}
+                          {testimonial.description}
                         </span>
                       </div>
-                    </div>
+                    ))}
                   </div>
-                  // </div>
-                ))}
+                  {/* Carousel controls */}
+                  <button
+                    className="carousel-control-prev testibutton"
+                    type="button"
+                    data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      className="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span className="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    className="carousel-control-next testibutton"
+                    type="button"
+                    data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      className="carousel-control-next-icon "
+                      aria-hidden="true"
+                    ></span>
+                    <span className="visually-hidden">Next</span>
+                  </button>
+                  {/* Carousel indicators */}
+                  <div className="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleControlsNoTouching"
+                      data-bs-slide-to="0"
+                      className="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleControlsNoTouching"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleControlsNoTouching"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                </div>
               </div>
-              <button
-                className="carousel-control-prev testibutton"
-                type="button"
-                data-bs-target="#carouselExampleControlsNoTouching"
-                data-bs-slide="prev"
-              >
-                <span
-                  className="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="visually-hidden">Previous</span>
-              </button>
-              <button
-                className="carousel-control-next testibutton"
-                type="button"
-                data-bs-target="#carouselExampleControlsNoTouching"
-                data-bs-slide="next"
-              >
-                <span
-                  className="carousel-control-next-icon "
-                  aria-hidden="true"
-                ></span>
-                <span className="visually-hidden">Next</span>
-              </button>
             </div>
           </div>
         </div>
