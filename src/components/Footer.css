@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sofaimg {
+    order: 2;
+
+}
+
+.sofaimg img {
+    height: 290px;
+}

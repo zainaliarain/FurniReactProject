@@ -3,8 +3,6 @@ import recentImg1 from "../images/post-1.jpg";
 import recentImg2 from "../images/post-2.jpg";
 import recentImg3 from "../images/post-3.jpg";
 import "./Blog.css";
-// import recentImg2 from "../images/post-1.jpg";
-// import recentImg3 from "../images/post-1.jpg";
 function Blog() {
   const Blog = [
     {
@@ -44,14 +42,14 @@ function Blog() {
                     <a href="/link/to/somewhere">
                       <img alt="Post for Recent" src={Blog.icon} />
                     </a>
-                    <a href="/link/to/#" style={{ marginTop: "20px" }}>
-                      {Blog.title}
-                    </a>
-                    <div className="cardfooter">
-                      <span>
-                        by <a href="/link/to/somewhere">{Blog.author}</a>on
-                        <a href="/link/to/somewhere">{Blog.date}</a>
-                      </span>
+                  </div>
+                  <div className="cardfooter">
+                    <a href="/link/to/#">{Blog.title}</a>
+                    <div className="author-name">
+                      <span>by</span>&nbsp;
+                      <a href="/link/to/somewhere">{Blog.author}</a>
+                      &nbsp;<span>on</span>&nbsp;
+                      <a href="/link/to/somewhere">{Blog.date}</a>
                     </div>
                   </div>
                 </div>

@@ -7,6 +7,7 @@ import cardimg3 from "../images/product-3.png";
 import Main from "../components/Main";
 import Testimonial from "./Testimonial";
 import Blog from "./Blog";
+import Footer from "./Footer";
 
 function Hero() {
   const featureCards = [
@@ -99,6 +100,7 @@ function Hero() {
       <Main />
       <Testimonial />
       <Blog />
+      <Footer />
     </div>
   );
 }
