@@ -7,33 +7,37 @@ import "./Footer.css";
 function Footer() {
   return (
     <div>
-      <div className="container ">
-        <div className="sofaimg">
-          <img alt="sofaImg" src={sofaimg} />
-        </div>
+      {/* Footer Section Start */}
+      <footer className="footer">
+        <div className="container footer-body">
+          <div className="sofaimg">
+            <img alt="sofaImg" src={sofaimg} />
+          </div>
 
-        <div className="row mt-5">
-          <div className="col-8 mt-5">
-            <h4>
-              <span>
-                <FontAwesomeIcon icon={faEnvelope} className="fa-thin" />
-              </span>
-              &nbsp; Subscribe to Newsletter
-            </h4>
-            <form action="">
-              <div>
+          <div className="row mt-5">
+            <div className="col-8 mt-5">
+              <h4>
+                <span>
+                  <FontAwesomeIcon icon={faEnvelope} className="fa-thin" />
+                </span>
+                &nbsp; Subscribe to Newsletter
+              </h4>
+              <form action="">
                 <input type="text" />
-                <input type="text" />
+                <div className="form-fields">
+                  <input type="text" />
+                </div>
                 <button type="button" class="btn btn-success">
                   <span>
                     <FontAwesomeIcon icon={faPaperPlane} className="fa-solid" />
                   </span>
                 </button>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
+      </footer>
+      {/* Footer Section End */}
     </div>
   );
 }
