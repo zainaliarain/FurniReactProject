@@ -29,6 +29,7 @@ function Hero() {
   ];
   return (
     <div>
+      {/* newCode */}
       {/* Start Hero Section */}
       <section className="hero">
         <div className="container">
