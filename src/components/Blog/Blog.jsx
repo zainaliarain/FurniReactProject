@@ -1,7 +1,7 @@
 import React from "react";
-import recentImg1 from "../images/post-1.jpg";
-import recentImg2 from "../images/post-2.jpg";
-import recentImg3 from "../images/post-3.jpg";
+import recentImg1 from "../../images/post-1.jpg";
+import recentImg2 from "../../images/post-2.jpg";
+import recentImg3 from "../../images/post-3.jpg";
 import "./Blog.css";
 function Blog() {
   const Blog = [

@@ -1,5 +1,5 @@
 import React from "react";
-import sliderImg from "../images/person-1.jpg";
+import sliderImg from "../../images/person-1.jpg";
 import "./Testimonial.css";
 function Testimonial() {
   const testimonials = [

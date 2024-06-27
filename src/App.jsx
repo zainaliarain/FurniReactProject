@@ -1,8 +1,8 @@
 import React from "react";
-import Nav from "./components/Nav";
-import Hero from "./components/Hero";
-import Main from "./components/Main";
-import Shop from "./components/Shop";
+import Nav from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
+import Main from "./components/Hero/Main";
+import Shop from "./components/Shop/Shop";
 
 import { Routes, Route } from "react-router-dom";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import sofaimg from "../images/sofa.png";
+import sofaimg from "../../images/sofa.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";

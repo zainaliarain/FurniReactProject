@@ -1,6 +1,6 @@
 import React from "react";
-import "./Shopstyle.css";
-import Main from "../components/Main";
+import "./Shop.css";
+import Main from "../Hero/Main";
 
 function Shop() {
   return (

@@ -1,13 +1,13 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import "./NavStyle.css";
+import "./Navbar.css";
 import { Link } from "react-router-dom";
-function Nav() {
-  // {Difine the array for list}
 
+function Nav() {
+  // Define the array for list
   const navbarItems = [
-    { name: "Home", link: "hero" },
+    { name: "Home", link: "/hero" },
     { name: "Shop", link: "/shop" },
     { name: "About\u00A0us", link: "#" },
     { name: "Services", link: "#" },
@@ -20,13 +20,13 @@ function Nav() {
   return (
     <div>
       <nav
-        className="navbar navbar-expand-lg  outerStyle"
+        className="navbar navbar-expand-lg outerStyle"
         style={{ paddingTop: "10px", paddingBottom: "10px" }}
       >
         <div className="container innerStyle">
-          <a className="logoStyle navbar-brand" href="/path/to/page">
+          <Link className="logoStyle navbar-brand" to="/path/to/page">
             Furni <span className="dotStyle">.</span>
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -39,20 +39,19 @@ function Nav() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className=" collapse navbar-collapse " id="navbarNav">
-            {/* {mapping for manu items and genrate the item list} */}
-
-            <ul className="navbardNav navbar-nav ">
+          <div className="collapse navbar-collapse" id="navbarNav">
+            {/* Mapping for menu items and generate the item list */}
+            <ul className="navbar-nav ms-auto">
               {navbarItems.map((item, index) => (
-                <li className=" nav-item" key={index}>
-                  <Link
-                    className="nav-link active"
-                    to={item.link}
-                    aria-current="page"
-                    style={{ color: "#EFF2F1 " }}
-                  >
+                <li className="nav-item" key={index}>
+                  <Link className="nav-link" to={item.link} aria-current="page">
                     {item.name}
-                    {item.icon && <FontAwesomeIcon icon={item.icon} />}
+                    {item.icon && (
+                      <FontAwesomeIcon
+                        icon={item.icon}
+                        style={{ marginLeft: "5px" }}
+                      />
+                    )}
                   </Link>
                 </li>
               ))}

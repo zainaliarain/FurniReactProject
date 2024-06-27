@@ -1,16 +1,16 @@
 import React from "react";
 import "./Hero.css";
-import truck from "../images/truck.svg";
-import bag from "../images/bag.svg";
-import support from "../images/support.svg";
-import retrn from "../images/return.svg";
-import whychooseus from "../images/why-choose-us-img.jpg";
-import cardimg1 from "../images/product-1.png";
-import cardimg2 from "../images/product-2.png";
-import cardimg3 from "../images/product-3.png";
-import grid1 from "../images/img-grid-1.jpg";
-import grid2 from "../images/img-grid-2.jpg";
-import grid3 from "../images/img-grid-3.jpg";
+import truck from "../../images/truck.svg";
+import bag from "../../images/bag.svg";
+import support from "../../images/support.svg";
+import retrn from "../../images/return.svg";
+import whychooseus from "../../images/why-choose-us-img.jpg";
+import cardimg1 from "../../images/product-1.png";
+import cardimg2 from "../../images/product-2.png";
+import cardimg3 from "../../images/product-3.png";
+import grid1 from "../../images/img-grid-1.jpg";
+import grid2 from "../../images/img-grid-2.jpg";
+import grid3 from "../../images/img-grid-3.jpg";
 
 function Main() {
   const feature = [

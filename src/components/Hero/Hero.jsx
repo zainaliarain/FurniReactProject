@@ -1,13 +1,13 @@
 import React from "react";
 import "./Hero.css";
-import img from "../images/couch.png";
-import cardimg1 from "../images/product-1.png";
-import cardimg2 from "../images/product-2.png";
-import cardimg3 from "../images/product-3.png";
-import Main from "../components/Main";
-import Testimonial from "./Testimonial";
-import Blog from "./Blog";
-import Footer from "./Footer";
+import img from "../../images/couch.png";
+import cardimg1 from "../../images/product-1.png";
+import cardimg2 from "../../images/product-2.png";
+import cardimg3 from "../../images/product-3.png";
+import Main from "../Hero/Main";
+import Testimonial from "../Testimonial/Testimonial";
+import Blog from "../Blog/Blog";
+import Footer from "../Footer/Footer";
 
 function Hero() {
   const featureCards = [
