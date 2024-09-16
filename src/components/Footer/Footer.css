@@ -1,0 +1,18 @@
+.footer {
+    background-color: #FFFFFF;
+}
+
+.footer-body {
+    display: flex;
+    justify-content: flex-end;
+
+    /* Background color applied to the entire footer */
+}
+
+.sofaimg {
+    order: 2;
+}
+
+.sofaimg img {
+    height: 300px;
+}

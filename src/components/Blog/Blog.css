@@ -1,0 +1,50 @@
+.card {
+    width: 425px;
+}
+
+.card-body {
+    border: none;
+
+}
+
+.card-header {
+    text-align: right !important;
+}
+
+.card-header a {
+    color: black;
+}
+
+.card-body img {
+    height: 285px;
+    width: 392px;
+    border-radius: 24px;
+    position: relative;
+    transition: opacity 0.5s ease;
+
+}
+
+.card-body img:hover {
+    opacity: 0.5;
+    color: aqua;
+}
+
+.cardfooter {
+    margin-top: 10px;
+    margin-left: 30px;
+
+}
+
+.cardfooter a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.cardfooter .author-name a {
+    margin-top: 15px;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
